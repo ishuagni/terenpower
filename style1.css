@@ -1,0 +1,373 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 Jan, 2018, 9:06:25 PM
+    Author     : shaurya
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    height: 90px;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: right;
+    border-radius: 5px;
+    display: block;
+    color: white;
+    margin: 25px 25px 25px 1px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    height: 40px;
+    background-color: MediumBlue;
+}
+
+.topnav p {
+    float: right;
+    border-radius: 5px;
+    display: block;
+    color: white;
+    margin: 25px 25px 25px 1px;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    height: 40px;
+    background-color: MediumBlue;
+}
+
+.topnav .logo{
+    float: left;
+    margin: 5px 50px 5px 150px;
+    height: 80px;
+}
+
+.topnav .bell{
+    float: right;
+    margin: 25px 25px 25px 10px;
+    height: 40px;
+}
+
+.topnav .bellRed{
+    float: right;
+    margin: 20px 25px 20px 10px;
+    height: 50px;
+}
+
+/* Change color on hover */
+.topnav a:hover{
+    background-color: #5B2C6F;
+    color: white;
+}
+
+/* Style the content */
+.content{
+    background-color: #ddd;
+    padding: 10px;
+    min-height: 1000px;
+}
+
+.sidenav {
+	background-color: black;
+	padding: 10px;
+	float: left;
+	width: 20%;
+	margin: 1px 1px 1px 1px;
+	height: 100%;
+}
+
+
+/* Style the footer */
+.footer {
+    background-color: DimGrey;
+    padding: 10px;
+    height: 90px;
+}
+
+.footer p{
+    padding: 10px;
+    margin: 20px 20px 20px 100px;
+    color: Gainsboro;
+}
+
+.footer a{
+    text-decoration: none;
+    color: DeepSkyBlue;
+}
+
+.footer a:hover{
+    color: DodgerBlue;
+    text-decoration: underline;
+}
+
+
+input[type=text], input[type=password], input[type=number], input[type=url], input[type=email]{
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid green;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 4px 4px 4px 4px;
+}
+
+input[type=text]:hover, input[type=password]:hover,input[type=url]:hover, input[type=email]:hover, input[type=number]:hover {
+    width: 100%;
+    border: 2px solid #0000ff;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=url]:focus, input[type=email]:focus, input[type=number]:focus{
+    width: 100%;
+    border: 2px solid #0000ff;
+}
+
+input[required] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid tomato;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 4px 4px 4px 4px;
+}
+
+input[required]:hover{
+	width: 100%;
+	border: 2px solid #0000ff;
+}
+
+input[required]:focus{
+	width: 100%;
+	border: 2px solid #0000ff;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-color: green;
+    border-radius: 4px;
+    border-style: solid;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    width: 100px;
+    background-color: green;
+    color: white;
+}
+
+form {
+      width: 95%;
+      margin-left: 5%;
+}
+
+h3{
+    text-transform: capitalize;
+    color: red;
+}
+
+h2{
+    font-style: normal;
+    color: Blue;
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.content p{
+    font-style: normal;
+    color: Blue;
+    margin-right: 20px;
+    text-height: max-size;
+}
+
+h1{
+    text-transform: capitalize;
+    color: DarkSlateBlue;
+}
+
+select {
+  margin: 50px;
+  border: 2px solid red;
+  width: 150px;
+  padding: 5px 20px 5px 5px;
+  font-size: 20px;
+  height: 50px;
+  appearance: none;
+  background-color: white;
+}
+
+select:hover {
+  margin: 50px;
+  border: 2px solid #0000ff;
+  width: 150px;
+  padding: 5px 20px 5px 5px;
+  font-size: 20px;
+  height: 50px;
+  appearance: none;
+  background-color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown button {
+    float: left;
+    border-radius: 5px;
+    display: block;
+    color: black;
+    margin: 20px 1px 20px 1px;
+    text-align: center;
+    padding: 18px 25px;
+    text-decoration: none;
+    height: 50px;
+}
+
+.dropdown-content a:hover {background-color: MediumBlue;
+    color: white;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/* Style the sidenav links and the dropdown button */
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: 2px;
+	margin-bottom: 2px; 
+    background-color: black;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* On mouse-over */
+.dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    background-color: black;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+#mySidenav .Menu {
+    position: absolute;
+    left: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+#mySidenav .Menu a{
+        display: none;
+}
+
+#mySidenav .Menu p{
+        display: none;
+}
+
+#mySidenav .Menu .dropdown-btn{
+        display: none;
+}
+
+#mySidenav .Menu:hover {
+    left: 0;
+    width: 300px;
+}
+
+#mySidenav .Menu:hover a{
+    display: block;
+    margin: 20px;
+}
+
+#mySidenav .Menu:hover p{
+    display: block;
+    margin: 20px;
+}
+
+#mySidenav .Menu:hover .dropdown-btn{
+    display: block;
+    margin: 20px;
+    margin-left: 0px;
+}
+
+.Menu {
+    top: 130px;
+    background-color: black;
+    height: 900px;
+}
+
+.Menu a{
+    color: #818181;
+    text-decoration: none;
+}
+
+.Menu a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-container a{
+    color: #818181;
+    text-decoration: none;
+}
+
+.dropdown-container a:hover{
+    color: white;
+    text-decoration: none;
+}
